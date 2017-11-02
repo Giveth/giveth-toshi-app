@@ -6,7 +6,7 @@ services:
       - redis
       - postgres
     environment: &environment
-      - TOKEN_APP_SEED=purse lab robot federal report size already brief unfair pledge outer globe
+      - TOKEN_APP_SEED=
       - TOKEN_APP_USERNAME=GivethToshiApp
       - TOKEN_APP_NAME=Giveth Bot
       - TOKEN_APP_AVATAR=
