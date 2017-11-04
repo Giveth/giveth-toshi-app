@@ -73,7 +73,7 @@ function welcome(session) {
 }
 
 function wallet(session) {
-  sendMessage(session, `revolution.eth`)
+  sendMessage(session, `If you would like to get one of our governance tokens, you can donate to us at: revolution.eth`)
 }
 
 
@@ -88,7 +88,9 @@ function donate(session) {
 
 function social(session) {
   sendMessage(session, 'Facebook: https://www.facebook.com/givethio/')
-  sendMessage(session, 'Twitter: https://www.twitter.com/givethio/')	
+  sendMessage(session, 'Twitter: https://www.twitter.com/givethio/')
+  sendMessage(session, 'Slack: slack.giveth.io')
+  sendMessage(session, 'Wiki: https://wiki.giveth.io')	
 
 }
 // HELPERS
