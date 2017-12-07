@@ -6,8 +6,8 @@ services:
       - redis
       - postgres
     environment: &environment
-      - TOKEN_APP_SEED=
-      - TOKEN_APP_USERNAME=GivethToshiApp
+      - TOKEN_APP_SEED=exist drill duty inquiry feed ethics hen tool idea arrest assume wine
+      - TOKEN_APP_USERNAME=GivethBot10
       - TOKEN_APP_NAME=Giveth Bot
       - TOKEN_APP_AVATAR=attachments/unicorn-dac.png
       - REDIS_URL=redis://h:rlcMWNrxXgqS0xM8aWCYuE0R@redis:6379
