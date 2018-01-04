@@ -113,8 +113,7 @@ function sendMessage(session, message) {
       label: "Our Dapp",
       "controls": [
         {type: "button", label: "Dapp alpha", action: "Webview::https://alpha.giveth.io"},
-        {type: "button", label: "Support", action: "Webview::http://slack.giveth.io"},
-        {type: "button", label: "Dapp", action: "Webview::http://dapp.giveth.io/#/"},
+        {type: "button", label: "Support", action: "Webview::http://slack.giveth.io"}
       ]
     }
   ]
