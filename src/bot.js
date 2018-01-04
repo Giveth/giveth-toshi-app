@@ -95,14 +95,28 @@ function social(session) {
 }
 // HELPERS
 function sendMessage(session, message) {
-  let controls = [
-    {type: 'button', label: 'Your Wallet?', value: 'wallet'},
-    {type: 'button', label: 'Social media', value: 'social'},
-    {type: 'button', label: 'Donate', value: 'donate'}
-  ]
   session.reply(SOFA.Message({
-    body: message,
-    controls: controls,
-    showKeyboard: false,
-  }))
+   body: message,
+  controls: [
+    {
+      type: "group",
+      label: "Giveth Info",
+      controls: [
+        {type: "button", label: "Giveth Website", action: "Webview::https://giveth.io"},
+        {type: "button", label: "Giveth Wallet", value: "wallet"},
+        {type: "button", label: "Social Media", value: "social"},
+        {type: "button", label: "Wiki", action: "Webview::https://wiki.giveth.io"}
+      ]
+    },
+    {
+      type: "group",
+      label: "Our Dapp",
+      "controls": [
+        {type: "button", label: "Dapp alpha", action: "Webview::https://alpha.giveth.io"},
+        {type: "button", label: "Support", action: "Webview::http://slack.giveth.io"}
+      ]
+    }
+  ]
+}))
+
 }

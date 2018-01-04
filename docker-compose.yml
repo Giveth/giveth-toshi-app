@@ -7,9 +7,9 @@ services:
       - postgres
     environment: &environment
       - TOKEN_APP_SEED=
-      - TOKEN_APP_USERNAME=GivethToshiApp
+      - TOKEN_APP_USERNAME=GivethBot
       - TOKEN_APP_NAME=Giveth Bot
-      - TOKEN_APP_AVATAR=attachments/unicorn-dac.png
+      - TOKEN_APP_AVATAR=attachments/Giveth-purple-logo.png
       - REDIS_URL=redis://h:rlcMWNrxXgqS0xM8aWCYuE0R@redis:6379
       - DATABASE_URL=postgres://token:va5uOdJBqu2dZ1@postgres:5432/token
       - LOG_LEVEL=INFO
